@@ -5,7 +5,7 @@ import numpy as np
 import operator ,os
 from sklearn.feature_extraction.text import TfidfVectorizer
 
-filepath = 'final.csv'
+filepath = 'data/final.csv'
 
 
 def bot_engine(query= ''):
