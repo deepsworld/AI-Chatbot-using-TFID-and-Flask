@@ -1,0 +1,40 @@
+{% from "_formhelpers.html" import render_field %}
+<html>
+
+<style>
+.content {
+  max-width: 500px;
+  margin: auto;
+}
+.center {
+  margin: auto;
+  width: 50%;
+  border: 3px solid green;
+  padding: 10px;
+}
+body {
+  background: lightgreen;
+  margin-right: 100px;
+}
+</style>
+<div class="center">
+<head>
+
+<title>AI Chatbot</title>
+
+</head>
+<body>
+	<h3>Chatbot</h3>
+	
+	<p> Current Model - TFID </p>
+	<form method="POST" action="/">
+	   <dl>
+	    {{ form.csrf_token }}
+	    {{ render_field(form.query) }}
+	    <input type="submit" value="Check">
+	    </dl>
+	</form>
+
+</body>
+</div>
+</html>
